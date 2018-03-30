@@ -1,7 +1,7 @@
 base:
 
-  '*':
-    - systeme.snmp
+#  '*':
+#    - systeme.snmp
 
 
 #################
@@ -10,7 +10,7 @@ base:
 
 #Toutes les distributions : 
   'G@kernel:Linux':
-    - systeme.sudoers
+    - systeme.hosts
 
 #Les distributions systemd
   'G@init:systemd':
@@ -25,5 +25,5 @@ base:
 # Windows
 #################
 
-#  'G@os:Windows':
-#    - systeme.test
+  'G@os:Windows':
+    - systeme.test
