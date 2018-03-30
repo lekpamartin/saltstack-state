@@ -22,7 +22,7 @@ base:
 
 # Elasticsearch
   'G@app:elasticsearch_6':
-    - systeme.elasticsearch_6
+    - app.elasticsearch_6
 
 
 
