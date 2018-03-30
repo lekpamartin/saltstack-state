@@ -1,0 +1,11 @@
+#
+# {{pillar['headers']['msg']}}
+#
+
+cluster.name: cluster-elasticsearch
+
+node.name: ${HOSTNAME}
+
+network.host: [_local_, "192.168.56.50"]
+
+discovery.zen.ping.unicast.hosts: ["192.168.56.50", "host5"]
