@@ -9,16 +9,21 @@ base:
 #################
 
 #Toutes les distributions : 
-  'G@kernel:Linux':
-    - systeme.hosts
+#  'G@kernel:Linux':
+#    - systeme.hosts
 
 #Les distributions systemd
-  'G@init:systemd':
-    - systeme.chronyd
+#  'G@init:systemd':
+#    - systeme.chronyd
 
 #Les distributions system V
   'G@init:upstart':
     - systeme.ntpd
+
+# Elasticsearch
+  'G@app:elasticsearch_6':
+    - systeme.elasticsearch_6
+
 
 
 #################
