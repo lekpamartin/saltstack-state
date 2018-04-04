@@ -25,5 +25,5 @@ base:
 # Windows
 #################
 
-#  'G@os:Windows':
-#    - systeme.test
+  'G@os:Windows':
+    - systeme.test
