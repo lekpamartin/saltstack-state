@@ -21,7 +21,7 @@ base:
     - systeme.ntpd
 
 # Elasticsearch
-  'G@app:elasticsearch_6':
+  'G@logiciels:elasticsearch_6':
     - logiciels.elasticsearch_6
 
 
