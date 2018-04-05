@@ -9,14 +9,14 @@ elasticsearch:
   service.running:
     - enable: true
     - watch:
-      - file: /etc/elasticsearch/elasticsearch.conf
+      - file: /etc/elasticsearch/elasticsearch.yml
 
-/etc/elasticsearch/elasticsearch.conf:
+/etc/elasticsearch/elasticsearch.yml:
   file.managed:
     - user: elasticsearch
     - group: elasticsearch
     - mode: '0640'
-    - source: salt://logiciels/elasticsearch_6/files/elasticsearch.conf.jinja
+    - source: salt://logiciels/elasticsearch_6/files/elasticsearch.yml.jinja
     - template: jinja
     - require:
       - pkg: elasticsearch
