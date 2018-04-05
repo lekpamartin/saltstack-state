@@ -3,7 +3,7 @@
     - user: root
     - group: root
     - mode: '0640'
-    - source: salt://app/elasticsearch_6/files/elastic_6.repo.jinja
+    - source: salt://logiciels/elasticsearch_6/files/elastic_6.repo.jinja
     - template: jinja
 
 elasticsearch:
@@ -19,7 +19,7 @@ elasticsearch:
     - user: elasticsearch
     - group: elasticsearch
     - mode: '0640'
-    - source: salt://app/elasticsearch_6/files/elasticsearch.conf.jinja
+    - source: salt://logiciels/elasticsearch_6/files/elasticsearch.conf.jinja
     - template: jinja
     - require:
       - pkg: elasticsearch
