@@ -13,7 +13,7 @@ elasticsearch:
 
 /etc/elasticsearch/elasticsearch.yml:
   file.managed:
-    - user: elasticsearch
+    - user: root
     - group: elasticsearch
     - mode: '0640'
     - source: salt://logiciels/elasticsearch_6/files/elasticsearch.yml.jinja
