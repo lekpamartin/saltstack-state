@@ -1,7 +1,7 @@
 base:
 
-#  '*':
-#    - systeme.snmp
+  '*':
+    - all.header
 
 
 #################
