@@ -3,6 +3,9 @@
     - source: salt://logiciels/elasticsearch_6/files/elastic_6.repo.jinja
     - template: jinja
 
+include:
+  - java_install
+
 elasticsearch:
   pkg:
     - installed
