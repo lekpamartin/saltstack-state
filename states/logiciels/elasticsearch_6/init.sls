@@ -4,7 +4,7 @@
     - template: jinja
 
 include:
-  - systeme.java_install
+  - systeme.java
 
 elasticsearch:
   pkg:

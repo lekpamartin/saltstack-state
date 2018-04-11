@@ -4,15 +4,15 @@
     - template: jinja
 
 include:
-  - systeme.java_install
+  - systeme.java
 
-elasticsearch:
+logstash:
   pkg:
     - installed
   service.running:
     - enable: true
     - watch:
-      - file: /etc/elasticsearch/elasticsearch.yml
+      - file: /etc/logstash/elasticsearch.yml
 
 /etc/elasticsearch/elasticsearch.yml:
   file.managed:
