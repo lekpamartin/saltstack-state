@@ -1,6 +1,6 @@
 /etc/yum.repos.d/elasticstack_6.repo:
   file.managed:
-    - source: salt://logiciels/elasticsearch_6/files/elasticstack_6.repo.jinja
+    - source: salt://logiciels/repository/files/elasticstack_6.jinja
     - template: jinja
 
 include:
