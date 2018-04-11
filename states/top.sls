@@ -20,9 +20,11 @@ base:
   'G@init:upstart':
     - systeme.ntpd
 
-# Elasticsearch
+# Elasticstack
   'G@logiciels:elasticsearch_6':
     - logiciels.elasticsearch_6
+  'G@logiciels:logstash_6':
+    - logiciels.logstash_6
 
 
 

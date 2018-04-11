@@ -14,7 +14,7 @@ logstash:
     - watch:
       - file: /etc/logstash/elasticsearch.yml
 
-/etc/elasticsearch/elasticsearch.yml:
+/etc/logstash/conf.d/udp.conf:
   file.managed:
     - user: root
     - group: elasticsearch
