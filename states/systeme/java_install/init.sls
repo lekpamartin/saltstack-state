@@ -1,4 +1,3 @@
-java_install:
+java:
   pkg:
     - installed
-    - name: java
