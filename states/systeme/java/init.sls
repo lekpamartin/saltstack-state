@@ -1,14 +1,14 @@
-#java:
-#  pkg:
-#    - installed
+java:
+  pkg:
+    - installed
 
 ##OpenJDK 8 environment with development libs
-java:
-  environment:
-    enabled: true
+#java:
+#  environment:
+#    enabled: true
 #    version: '8'
-    platform: openjdk
-    development: true
+#    platform: openjdk
+#    development: true
 
 ##Oracle JAVA JDK 8
 #java:
