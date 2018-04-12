@@ -3,4 +3,4 @@ install_requirements:
     - pkgs:
       - curl
       - net-tools
-#     - vim
+      - telnet
