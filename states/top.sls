@@ -8,19 +8,19 @@ base:
 # Linux
 #################
 
-#Toutes les distributions : 
-#  'G@kernel:Linux':
-#    - systeme.hosts
+##Toutes les distributions : 
+  'G@kernel:Linux':
+    - systeme.requirements
 
-#Les distributions systemd
+##Les distributions systemd
 #  'G@init:systemd':
 #    - systeme.chronyd
 
-#Les distributions system V
+##Les distributions system V
   'G@init:upstart':
     - systeme.ntpd
 
-# Elasticstack
+## Elasticstack
   'G@logiciels:elasticsearch_6':
     - logiciels.elasticsearch_6
   'G@logiciels:logstash_6':
