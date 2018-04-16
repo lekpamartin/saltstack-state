@@ -4,6 +4,7 @@ base:
     - all.header
     - all.dns
 
+{% import_yaml "/etc/salt/master.d/import_tags/*.yml" as tags %}
 
 #################
 # Linux
