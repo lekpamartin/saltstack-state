@@ -8,10 +8,9 @@ install_requirements:
 
 #Configuration de motd
 /etc/motd:
-  file.append:
-    - text:
-      - WARNING : This server is managed by Salt
-      - DEVOPS Team
+  file.managed:
+    - source: salt://systeme/requirements/files/motd.jinja
+    - template: jinja
 
 #Creation de /data
 /data:
