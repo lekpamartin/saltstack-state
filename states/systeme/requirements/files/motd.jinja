@@ -1,10 +1,21 @@
 
 
       ################################################
+      #
       #  WARNING : This server is managed by Salt
-      #  DEVOPS Team
-      #  logiciels :
-      #    - 1
+      #
+      #  Architecture : {{ grains['osarch'] }}
+      #  KERNEL       : {{ grains['kernel'] }}
+      #  MEMORY       : {{ grains['mem_total'] }}
+      #  CPU          : {{ grains['num_cpus'] }}
+      #  OS family    : {{ grains['os_family'] }}
+      #  OS name      : {{ grains['osfullname'] }}
+      #  OS name      : {{ grains['osrelease'] }}
+      #  logiciels    :
+{% for item in {{ grains['logiciels'] }} %} 
+      #    - {{ item }}
+{% endfor %}
+      #
       ################################################
 
 
