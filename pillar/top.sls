@@ -2,6 +2,7 @@ base:
 
   '*':
     - all.header
+    - all.dns
 
 
 #################

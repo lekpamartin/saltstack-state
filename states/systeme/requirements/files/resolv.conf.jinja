@@ -6,9 +6,7 @@
 #######################################################################
 #######################################################################
 
-{% for item in pillar.get('domains', {}) %}
-search {{ item }}
-{% endfor %}
+search {% for item in pillar.get('domains', {}) %} {{ item }}  {% endfor %}
 options rotate
 {% for item in pillar.get('dns', {}) %}
 nameserver {{ item }}
