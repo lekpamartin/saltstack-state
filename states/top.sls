@@ -23,6 +23,11 @@ base:
 ## Elasticstack
   'G@logiciels:elasticsearch_6':
     - logiciels.elasticsearch_6
+  'G@logiciels:elasticsearch_7':
+    - logiciels.elasticsearch_7
+  'G@logiciels:elasticsearch*':
+    - systeme.requirements.elasticsearch
+
   'G@logiciels:logstash_6':
     - logiciels.logstash_6
 
