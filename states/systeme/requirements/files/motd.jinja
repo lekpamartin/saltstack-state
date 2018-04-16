@@ -12,7 +12,7 @@
       #  OS name      : {{ grains['osfullname'] }}
       #  OS name      : {{ grains['osrelease'] }}
       #  logiciels    :
-{% for item in {{ grains['logiciels'] }} %} 
+{% for item in grains.get('logiciels', {}) %} 
       #    - {{ item }}
 {% endfor %}
       #
