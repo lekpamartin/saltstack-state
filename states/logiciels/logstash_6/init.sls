@@ -29,7 +29,7 @@ logstash:
     - template: jinja
     - require:
       - pkg: logstash
-   - watch_in:
+    - watch_in:
       - service: logstash_service
 
 /etc/logstash/conf.d/filter.conf:
@@ -41,7 +41,7 @@ logstash:
     - template: jinja
     - require:
       - pkg: logstash
-   - watch_in:
+    - watch_in:
       - service: logstash_service
 
 /etc/logstash/conf.d/output.conf:
@@ -53,7 +53,7 @@ logstash:
     - template: jinja
     - require:
       - pkg: logstash
-   - watch_in:
+    - watch_in:
       - service: logstash_service
 
 logstash_service:
