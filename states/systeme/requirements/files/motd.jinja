@@ -6,15 +6,13 @@
       #
       #  Architecture : {{ grains['osarch'] }}
       #  KERNEL       : {{ grains['kernel'] }}
-      #  MEMORY       : {{ grains['mem_total'] }}
+      #  MEMORY       : {{ grains['mem_total'] }} (MO)
       #  CPU          : {{ grains['num_cpus'] }}
       #  OS family    : {{ grains['os_family'] }}
       #  OS name      : {{ grains['osfullname'] }}
-      #  OS name      : {{ grains['osrelease'] }}
-      #  logiciels    :
-{% for item in grains.get('logiciels', {}) %} 
-      #    - {{ item }}
-{% endfor %}
+      #  OS release   : {{ grains['osrelease'] }}
+      #  logiciels    : {% for item in grains.get('logiciels', {}) %} 
+      #    - {{ item }} {% endfor %}
       #
       ################################################
 
