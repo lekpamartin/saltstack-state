@@ -1,8 +1,3 @@
-#/etc/yum.repos.d/elasticstack_6.repo:
-#  file.managed:
-#    - source: salt://logiciels/repository/files/elasticstack_6.jinja
-#    - template: jinja
-
 include:
   - systeme.java
   - logiciels.repository.elasticstack_6

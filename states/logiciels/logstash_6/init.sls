@@ -1,10 +1,6 @@
-/etc/yum.repos.d/elasticstack_6.repo:
-  file.managed:
-    - source: salt://logiciels/repository/files/elasticstack_6.jinja
-    - template: jinja
-
 include:
   - systeme.java
+  - logiciels.repository.elasticstack_6
 
 logstash:
   pkg:
@@ -12,14 +8,14 @@ logstash:
   service.running:
     - enable: true
     - watch:
-      - file: /etc/logstash/elasticsearch.yml
+      - file: /etc/logstash/logstash.yml
 
 /etc/logstash/conf.d/udp.conf:
   file.managed:
     - user: root
-    - group: elasticsearch
+    - group: logstash
     - mode: '0640'
-    - source: salt://logiciels/elasticsearch_6/files/elasticsearch.yml.jinja
+    - source: salt://logiciels/logstash_6/files/imput_udp.conf.jinja
     - template: jinja
     - require:
-      - pkg: elasticsearch
+      - pkg: logstash
