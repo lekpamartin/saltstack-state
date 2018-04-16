@@ -61,4 +61,4 @@ logstash_service:
     - name: logstash
     - enable: True
     - require: 
-      - pkg: logstash_pkg
+      - pkg: logstash
