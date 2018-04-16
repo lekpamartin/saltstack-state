@@ -5,7 +5,7 @@
 
 include:
   - systeme.java
-  - logiciels.repository.elasticstack_6.sls
+  - logiciels.repository.elasticstack_6
 
 elasticsearch:
   pkg:
